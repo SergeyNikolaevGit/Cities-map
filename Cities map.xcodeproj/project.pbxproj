@@ -12,6 +12,9 @@
 		2BDC69CE202A047200AF39C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC69CC202A047200AF39C0 /* Main.storyboard */; };
 		2BDC69D0202A047200AF39C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC69CF202A047200AF39C0 /* Assets.xcassets */; };
 		2BDC69D3202A047200AF39C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC69D1202A047200AF39C0 /* LaunchScreen.storyboard */; };
+		2BDC69DB202A06BD00AF39C0 /* Сities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC69DA202A06BD00AF39C0 /* Сities.plist */; };
+		2BDC69DD202A09D300AF39C0 /* Lat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC69DC202A09D300AF39C0 /* Lat.plist */; };
+		2BDC69DF202A09EA00AF39C0 /* Lon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC69DE202A09EA00AF39C0 /* Lon.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2BDC69CF202A047200AF39C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BDC69D2202A047200AF39C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BDC69D4202A047200AF39C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BDC69DA202A06BD00AF39C0 /* Сities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Сities.plist"; sourceTree = "<group>"; };
+		2BDC69DC202A09D300AF39C0 /* Lat.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Lat.plist; sourceTree = "<group>"; };
+		2BDC69DE202A09EA00AF39C0 /* Lon.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Lon.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				2BDC69CF202A047200AF39C0 /* Assets.xcassets */,
 				2BDC69D1202A047200AF39C0 /* LaunchScreen.storyboard */,
 				2BDC69D4202A047200AF39C0 /* Info.plist */,
+				2BDC69DA202A06BD00AF39C0 /* Сities.plist */,
+				2BDC69DC202A09D300AF39C0 /* Lat.plist */,
+				2BDC69DE202A09EA00AF39C0 /* Lon.plist */,
 			);
 			path = "Cities map";
 			sourceTree = "<group>";
@@ -124,7 +133,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BDC69D3202A047200AF39C0 /* LaunchScreen.storyboard in Resources */,
+				2BDC69DB202A06BD00AF39C0 /* Сities.plist in Resources */,
+				2BDC69DF202A09EA00AF39C0 /* Lon.plist in Resources */,
 				2BDC69D0202A047200AF39C0 /* Assets.xcassets in Resources */,
+				2BDC69DD202A09D300AF39C0 /* Lat.plist in Resources */,
 				2BDC69CE202A047200AF39C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

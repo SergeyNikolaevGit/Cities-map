@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cities_map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dJw-x9-AVE">
+                                <rect key="frame" x="16" y="80" width="343" height="309"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dJw-x9-AVE" secondAttribute="height" multiplier="343:309" id="zrU-o5-b3i"/>
+                                </constraints>
+                            </mapView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvl-mK-f0T">
+                                <rect key="frame" x="16" y="397" width="343" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="IYb-mU-tnh"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXX-TW-Ug8">
+                                <rect key="frame" x="16" y="36" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBE-oB-bNp">
+                                <rect key="frame" x="16" y="541" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nBE-oB-bNp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2nl-0d-iSl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yvl-mK-f0T" secondAttribute="trailing" constant="16" id="DDF-Sa-Mbp"/>
+                            <constraint firstItem="dJw-x9-AVE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fkh-3I-UNc"/>
+                            <constraint firstItem="Yvl-mK-f0T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GHY-e7-yTO"/>
+                            <constraint firstItem="ZXX-TW-Ug8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="MSv-yZ-etW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZXX-TW-Ug8" secondAttribute="trailing" constant="16" id="NnJ-ii-lSq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dJw-x9-AVE" secondAttribute="trailing" constant="16" id="S7b-RO-8i5"/>
+                            <constraint firstItem="dJw-x9-AVE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zk9-4b-y6I"/>
+                            <constraint firstItem="ZXX-TW-Ug8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="khk-9m-44v"/>
+                            <constraint firstItem="dJw-x9-AVE" firstAttribute="top" secondItem="ZXX-TW-Ug8" secondAttribute="bottom" constant="23" id="lJX-TD-EEy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nBE-oB-bNp" secondAttribute="trailing" constant="16" id="m55-tJ-aYN"/>
+                            <constraint firstItem="Yvl-mK-f0T" firstAttribute="top" secondItem="dJw-x9-AVE" secondAttribute="bottom" constant="8" id="mp2-eE-GWR"/>
+                            <constraint firstItem="nBE-oB-bNp" firstAttribute="top" secondItem="Yvl-mK-f0T" secondAttribute="bottom" constant="8" id="tBm-tg-4tV"/>
+                            <constraint firstItem="ZXX-TW-Ug8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uP4-qL-15X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="appNameLabel" destination="ZXX-TW-Ug8" id="gxX-zw-MYT"/>
+                        <outlet property="citiesMap" destination="dJw-x9-AVE" id="V5S-qj-32T"/>
+                        <outlet property="citiesPicker" destination="Yvl-mK-f0T" id="WJl-Sb-pMo"/>
+                        <outlet property="coordinateLabel" destination="nBE-oB-bNp" id="ELa-a0-GIr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
